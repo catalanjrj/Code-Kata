@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12AEFCE81CC15A6100159BA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AEFCE71CC15A6100159BA5 /* main.m */; };
+		12B66E3E1CD24D4D008D09F3 /* Palindrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B66E3D1CD24D4D008D09F3 /* Palindrome.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		12AEFCE41CC15A6100159BA5 /* code kata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "code kata"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12AEFCE71CC15A6100159BA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12B66E3C1CD24D4D008D09F3 /* Palindrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palindrome.h; sourceTree = "<group>"; };
+		12B66E3D1CD24D4D008D09F3 /* Palindrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palindrome.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,8 @@
 		12AEFCDB1CC15A6100159BA5 = {
 			isa = PBXGroup;
 			children = (
+				12B66E3C1CD24D4D008D09F3 /* Palindrome.h */,
+				12B66E3D1CD24D4D008D09F3 /* Palindrome.m */,
 				12AEFCE61CC15A6100159BA5 /* code kata */,
 				12AEFCE51CC15A6100159BA5 /* Products */,
 			);
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B66E3E1CD24D4D008D09F3 /* Palindrome.m in Sources */,
 				12AEFCE81CC15A6100159BA5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +245,7 @@
 				12AEFCED1CC15A6100159BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
