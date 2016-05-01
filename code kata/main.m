@@ -8,16 +8,15 @@
 
 #import <Foundation/Foundation.h>
 int number;
-BOOL isPalindrome;
 
 void sumOfMultiples(void);
 void largestPalindrome(void);
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
         sumOfMultiples();
-        largestPalindrome();    }
+        largestPalindrome();
+    }
     return 0;
 }
         //If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.//
@@ -41,29 +40,36 @@ void sumOfMultiples(){
 }
 
 //A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99. Find the largest palindrome made from the product of two 3-digit numbers.
-void largestPalindrome(void){
-
-  
-    BOOL isPalindrome:(int)number();
+void largestPalindrome(){
     
-int largestPalindromeIveSeen = 0;
-    int x = 100;
-    int y = 100;
-
-for (int x = 100; x<1000; x++){
-    for (int y = 100; y<1000; y++);}
-
-    if([self isPalindrome:x*y]){
+    int result = 0, stringLength = 0;
+    NSString *resultString = @"";
+    NSMutableString *reverseString = [[NSMutableString alloc] init];
+    NSMutableString *largestPalindrome = [[NSMutableString alloc] init];
     
-    if(x % y > largestPalindromeIveSeen){
-        largestPalindromeIveSeen = x % y;    }
-
-
-}
-
+    for (int x= 100; x < 1000; x++) {
+        for (int y = 100; y < 1000; y++) {
+            
+            [reverseString setString:@""];
+            
+            
+            result = x * y;
+            
+            
+            resultString = [NSString stringWithFormat:@"%d", result];
+            stringLength = (int)[resultString length];
+            
+            while (stringLength > 0) {
+                stringLength--;
+                [reverseString appendString:[NSString stringWithFormat:@"%c", (char)[resultString characterAtIndex:stringLength]]];
+            }
+            
+            if ([resultString isEqualToString:reverseString]) {
+                [largestPalindrome setString:resultString];
+            }
+            
+        }
+    }
+     NSLog(@"The largest palindrome is: %@", largestPalindrome);
     
-    //reverse string compare letter by letter. NSmutable string
-
-
-    //find the largest palindrome in a big range.
 }
